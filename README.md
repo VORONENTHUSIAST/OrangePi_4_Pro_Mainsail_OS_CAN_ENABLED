@@ -5,11 +5,11 @@ Pre-built, shrunk disk image for the **Orange Pi 4 Pro** featuring **Klipper**, 
 * **File Name:** `OPi4Pro_Mainsail_CAN_ENABLED.img.xz`
 * **Target Board:** Orange Pi 4 Pro
 * **Minimum Storage Required:** 32 GB+ microSD card or eMMC module
-* **Compressed Size:** ~3.5 GB (expands to ~14.5 GB before filesystem resize)
+* **Compressed Size:** ~3.5 GB (expands to ~14.0 GB before filesystem resize)
 * **Default SSH / System Login:** `orangepi` / `orangepi`
 * **SHA-256 Checksum:**
   ```text
-  e74f8747bf2a917a965b419924a08cbb7b043afed7352fd4918b5f01d77f9f8a
+  cef73a41bd1830a23226991a17e1f6ca801cff32ce995ed9c1aaa56f930d6ef8
   ```
 
 ---
@@ -35,7 +35,7 @@ Pre-built, shrunk disk image for the **Orange Pi 4 Pro** featuring **Klipper**, 
      ```bash
      sha256sum -c OPi4Pro_Mainsail_CAN_ENABLED.img.xz.sha256
      ```
-   * Confirm the output matches: `e74f8747bf2a917a965b419924a08cbb7b043afed7352fd4918b5f01d77f9f8a`
+   * Confirm the output matches: `cef73a41bd1830a23226991a17e1f6ca801cff32ce995ed9c1aaa56f930d6ef8`
 
 2. **Flash the Image:**
    * Open **BalenaEtcher** or **Raspberry Pi Imager**.
