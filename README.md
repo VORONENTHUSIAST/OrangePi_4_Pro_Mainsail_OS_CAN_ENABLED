@@ -5,7 +5,7 @@ Pre-built, shrunk disk image for the **Orange Pi 4 Pro** featuring **Klipper**, 
 * **File Name:** `OPi4Pro_Mainsail_CAN_ENABLED.img.xz`
 * **Target Board:** Orange Pi 4 Pro
 * **Minimum Storage Required:** 32 GB+ microSD card or eMMC module
-* **Compressed Size:** ~3.5 GB (expands to ~14.0 GB before filesystem resize)
+* **Compressed Size:** ~3.5 GB (expands to ~15.1 GB before filesystem resize)
 * **Default SSH / System Login:** `orangepi` / `orangepi`
 * **SHA-256 Checksum:**
   ```text
