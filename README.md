@@ -26,23 +26,25 @@ Pre-built, shrunk disk image for the **Orange Pi 4 Pro** featuring **Klipper**, 
 
 ## Flashing Instructions
 
-1. **Verify Your Download (Optional):**
-   * **Windows (PowerShell):**
-     ```powershell
-     Get-FileHash .\OPi4Pro_Mainsail_CAN_ENABLED.img.xz -Algorithm SHA256
+1. **Download All Release Assets:**
+   * Download **`OPi4Pro_Mainsail_CAN_ENABLED.img.xz.part_aa`**, **`OPi4Pro_Mainsail_CAN_ENABLED.img.xz.part_ab`**, and **`OPi4Pro_Mainsail_CAN_ENABLED.img.xz.sha256`** into the same folder.
+
+2. **Rejoin the Split Image:**
+   * **Windows (Command Prompt):**
+     ```cmd
+     copy /b OPi4Pro_Mainsail_CAN_ENABLED.img.xz.part_aa + OPi4Pro_Mainsail_CAN_ENABLED.img.xz.part_ab OPi4Pro_Mainsail_CAN_ENABLED.img.xz
      ```
    * **Linux / macOS:**
      ```bash
-     sha256sum -c OPi4Pro_Mainsail_CAN_ENABLED.img.xz.sha256
+     cat OPi4Pro_Mainsail_CAN_ENABLED.img.xz.part_* > OPi4Pro_Mainsail_CAN_ENABLED.img.xz
      ```
-   * Confirm the output matches: `cef73a41bd1830a23226991a17e1f6ca801cff32ce995ed9c1aaa56f930d6ef8`
-
-2. **Flash the Image:**
+     
+3. **Flash the Image:**
    * Open **BalenaEtcher** or **Raspberry Pi Imager**.
    * Select **`OPi4Pro_Mainsail_CAN_ENABLED.img.xz`** directly (do **not** extract it first—both tools decompress `.xz` automatically while flashing).
    * Select your **32 GB or larger** microSD card or eMMC module and click **Flash**.
 
-3. **First Boot:**
+4. **First Boot:**
    * Insert the flashed microSD card or eMMC module into your Orange Pi 4 Pro and power it on (allow 1–2 minutes for initial boot).
    * Connect via Ethernet (or configure Wi-Fi via `sudo nmtui` / `sudo orangepi-config`) and find the board's IP address from your router or KlipperScreen.
    * Open `http://<orange-pi-ip>` in your browser to access **Mainsail**.
