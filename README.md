@@ -67,3 +67,17 @@ Pre-built, shrunk disk image for the **Orange Pi 4 Pro** featuring **Klipper**, 
 3. **Link Your Accounts & Change Default Password:**
    * Link your **Obico** and **Mobileraker** accounts if you plan to use remote monitoring/notifications.
    * Change the default `orangepi` password (`passwd`) before exposing the device on your network.
+
+## Custom Boot Splash Video (Change or Disable)
+
+This image includes a custom boot splash video controlled by `/home/orangepi/ks-splash.sh`.
+
+### Option 1: Replace the Splash Video
+Replace `/home/orangepi/1.mp4` with your own `.mp4` file (keeping the exact filename `1.mp4`), or edit `/home/orangepi/ks-splash.sh` (`nano ~/ks-splash.sh`) to point to a different video file.
+
+### Option 2: Disable the Splash Video
+Comment out the `cvlc` line inside `/home/orangepi/ks-splash.sh` by running:
+```bash
+sed -i 's|^/usr/bin/cvlc|#/usr/bin/cvlc|' /home/orangepi/ks-splash.sh
+```
+
