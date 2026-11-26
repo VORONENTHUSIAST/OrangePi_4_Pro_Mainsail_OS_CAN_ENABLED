@@ -8,8 +8,8 @@ Pre-built, shrunk disk image for the **Orange Pi 4 Pro** featuring **Klipper**, 
 * **Compressed Size:** ~3.5 GB (expands to ~15.1 GB before filesystem resize)
 * **Default SSH / System Login:** `orangepi` / `orangepi`
 * **SHA-256 Checksum:**
-  ```text
- cef73a41bd1830a23226991a17e1f6ca801cff32ce995ed9c1aaa56f930d6ef8 
+  ```text cef73a41bd1830a23226991a17e1f6ca801cff32ce995ed9c1aaa56f930d6ef8 
+
   ```
 
 ---
