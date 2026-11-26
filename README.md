@@ -9,7 +9,7 @@ Pre-built, shrunk disk image for the **Orange Pi 4 Pro** featuring **Klipper**, 
 * **Default SSH / System Login:** `orangepi` / `orangepi`
 * **SHA-256 Checksum:**
   ```text
-  cef73a41bd1830a23226991a17e1f6ca801cff32ce995ed9c1aaa56f930d6ef8
+ cef73a41bd1830a23226991a17e1f6ca801cff32ce995ed9c1aaa56f930d6ef8 
   ```
 
 ---
